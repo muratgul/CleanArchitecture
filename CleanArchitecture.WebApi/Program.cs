@@ -19,7 +19,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 
-app.UseMiddlewareExtensions();
+//app.UseMiddlewareExtensions();
 
 app.UseHttpsRedirection();
 

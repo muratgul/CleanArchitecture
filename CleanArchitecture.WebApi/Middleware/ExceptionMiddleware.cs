@@ -50,16 +50,16 @@ public sealed class ExceptionMiddleware : IMiddleware
 
     private async Task LogExceptionToDatabaseAsync(Exception ex, HttpRequest request)
     {
-        ErrorLog errorLog = new()
-        {
-            ErrorMessage = ex.Message,
-            StackTrace = ex.StackTrace,
-            RequestPath = request.Path,
-            RequestMethod = request.Method,
-            Timestamp = DateTime.Now,
-        };
+        //ErrorLog errorLog = new()
+        //{
+        //    ErrorMessage = ex.Message,
+        //    StackTrace = ex.StackTrace,
+        //    RequestPath = request.Path,
+        //    RequestMethod = request.Method,
+        //    Timestamp = DateTime.Now,
+        //};
 
-        await _context.Set<ErrorLog>().AddAsync(errorLog, default);
-        await _context.SaveChangesAsync(default);
+        //await _context.Set<ErrorLog>().AddAsync(errorLog, default);
+        //await _context.SaveChangesAsync(default);
     }
 }

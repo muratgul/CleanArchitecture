@@ -7,7 +7,6 @@ using CleanArchitecture.Domain.Repositories;
 using CleanArchitecture.Persistance.Context;
 using EntityFrameworkCorePagination.Nuget.Pagination;
 using GenericRepository;
-using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Persistance.Services;
 
